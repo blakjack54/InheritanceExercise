@@ -6,34 +6,40 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+            // Create an object of your Bird class
+            Bird parrot = new Bird
+            {
+                Name = "Parrot",
+                Age = 2,
+                Habitat = "Rainforest",
+                Diet = "Fruits and seeds",
+                WingSpan = 0.25,
+                FeatherColor = "Green",
+                CanFly = true,
+                BirdSound = "Chirp"
+            };
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            // Display Bird information
+            Console.WriteLine("Bird Information:");
+            parrot.DisplayBirdInfo();
+            Console.WriteLine();
 
+            // Create an object of your Reptile class
+            Reptile snake = new Reptile
+            {
+                Name = "Snake",
+                Age = 4,
+                Habitat = "Desert",
+                Diet = "Small animals",
+                ScaleType = "Smooth",
+                IsVenomous = true,
+                ReproductionType = "Oviparous",
+                ColdBloodedBehavior = "Basks in the sun"
+            };
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
-
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+            // Display Reptile information
+            Console.WriteLine("Reptile Information:");
+            snake.DisplayReptileInfo();
         }
     }
 }
